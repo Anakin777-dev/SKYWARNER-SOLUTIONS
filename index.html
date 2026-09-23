@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkyWarner Solutions</title>
+    <style>
+        :root {
+            --bg-color: #0d1117;
+            --card-bg: #161b22;
+            --accent: #58a6ff;
+            --text-primary: #f0f6fc;
+            --text-secondary: #8b949e;
+            --border-color: #30363d;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-primary);
+            line-height: 1.6;
+            padding-bottom: 60px;
+        }
+
+        /* Navigation Bar */
+        nav {
+            position: sticky;
+            top: 0;
+            background-color: rgba(22, 27, 34, 0.95);
+            backdrop-filter: blur(8px);
+            border-bottom: 1px solid var(--border-color);
+            z-index: 1000;
+        }
+
+        .nav-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1rem 2rem;
+        }
+
+        .nav-brand {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: var(--text-primary);
+            text-decoration: none;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 1.5rem;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.95rem;
+            transition: color 0.2s ease;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* Header / Hero Section */
+        header {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-bottom: 1px solid var(--border-color);
+            background: radial-gradient(circle at top, #1f293d 0%, var(--bg-color) 70%);
+        }
+
+        .logo-placeholder {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            background-color: var(--card-bg);
+            border: 2px dashed var(--accent);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 1.5rem auto;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        /* Main Container */
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        section {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        section h2 {
+            font-size: 1.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.5rem;
+        }
+
+        /* Gumroad CTA Button */
+        .cta-button {
+            display: inline-block;
+            background-color: #ff90e8;
+            color: #000;
+            font-weight: bold;
+            padding: 0.8rem 1.8rem;
+            border-radius: 6px;
+            text-decoration: none;
+            margin-top: 1rem;
+            transition: transform 0.2s ease, opacity 0.2s ease;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+            transform: translateY(-2px);
+        }
+
+        /* Form Inputs */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+
+        input, textarea {
+            background-color: var(--bg-color);
+            border: 1px solid var(--border-color);
+            border-radius: 6px;
+            padding: 0.8rem;
+            color: var(--text-primary);
+            font-size: 1rem;
+        }
+
+        input:focus, textarea:focus {
+            outline: 1px solid var(--accent);
+        }
+
+        button[type="submit"] {
+            background-color: var(--accent);
+            color: #fff;
+            border: none;
+            padding: 0.8rem;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+        }
+
+        button[type="submit"]:hover {
+            opacity: 0.9;
+        }
+
+        /* Responsive Layout */
+        @media (max-width: 600px) {
+            .nav-container {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            .nav-links {
+                gap: 1rem;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="#" class="nav-brand">SkyWarner Solutions</a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#store">Store</a></li>
+                <li><a href="#posts">Posts</a></li>
+                <li><a href="#suggestions">Suggestions</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Header / Logo -->
+    <header>
+        <div class="logo-placeholder">LOGO</div>
+        <h1>SkyWarner Solutions</h1>
+        <p>Digital tools, custom utilities, and software concepts.</p>
+    </header>
+
+    <!-- Main Content -->
+    <div class="container">
+
+        <!-- About Section -->
+        <section id="about">
+            <h2>About</h2>
+            <p>Welcome to SkyWarner Solutions. We specialize in creating clean, effective digital tools, calculators, and software solutions designed to streamline workflows and solve practical problems.</p>
+        </section>
+
+        <!-- Store Section -->
+        <section id="store">
+            <h2>Gumroad Store</h2>
+            <p>Check out our latest digital downloads, scripts, and software tools available on Gumroad.</p>
+            <a href="https://gumroad.com" target="_blank" class="cta-button">Visit Gumroad Store</a>
+        </section>
+
+        <!-- Posts & Comments Section -->
+        <section id="posts">
+            <h2>Posts & Comments</h2>
+            <p>Stay tuned for regular project updates, patch notes, and release announcements.</p>
+            <form onsubmit="event.preventDefault(); alert('Comment feature placeholder.');">
+                <textarea rows="3" placeholder="Leave a comment..."></textarea>
+                <button type="submit">Post Comment</button>
+            </form>
+        </section>
+
+        <!-- Ideas & Suggestions Section -->
+        <section id="suggestions">
+            <h2>Ideas & Suggestions</h2>
+            <p>Have a feature request or an idea for a new tool? Let us know below.</p>
+            <form onsubmit="event.preventDefault(); alert('Suggestion submitted!');">
+                <input type="text" placeholder="Your Suggestion Topic" required>
+                <textarea rows="4" placeholder="Describe your idea or request..." required></textarea>
+                <button type="submit">Submit Suggestion</button>
+            </form>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>For support, inquiries, or business opportunities, reach out directly:</p>
+            <p style="margin-top: 0.5rem; color: var(--accent);"><strong>Email:</strong> contact@skywarnersolutions.com</p>
+        </section>
+
+    </div>
+
+</body>
+</html>
